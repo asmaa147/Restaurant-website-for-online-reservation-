@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.just-for-trial{
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+}
+
+/* ------------------------- */
+/* ----gallary section style---- */
+
+.gallary-section{
+    position: relative;
+} 
+.gallary{
+    width: 100%;
+    height:300px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.gallary-img{
+    display: inline-block;
+    width: 18%;
+    height: 300px;
+    margin: 0.8% ;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.gallary-img:hover{
+    opacity: 0.6;
+}
+
+/* ------------------------- */
+/* ----gallary popup style---- */
+.gallary-popup{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    visibility:hidden;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+
+/* .popup-content{
+    z-index: 150;
+}
+
+.whole-popup{
+    cursor: pointer;
+    z-index: 100;
+} */
+
+.popup-img{
+    width: 400px;
+    z-index: 150;
+}
+
+.popup-text{
+    color: #f1f1f1;
+    position: relative;
+}
+
+.popup-arrow{
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.popup-exit{
+    position:absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+
+
+/* ------------------------- */
+/* ----booking section style---- */
+.booking-section{
+    text-align: center;
+    padding: 100px;
+    color: #555;
+}
+
+.booking-heading-4{
+    text-transform: uppercase;
+}
+/* .booking-heading-2{
+    text-transform: capitalize;
+    color: #333;
+} */
+
+.booking-input{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.booking-select{
+    display: inline-block;
+    margin: 25px 10px;
+}
+
+.booking-people,
+.booking-time,
+.booking-date{
+    /* to remove the dropdown arrow */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #ebebeb;
+    padding: 15px;
+    color: #9a9a9a;
+}
+
+.options{
+    color: #9a9a9a;
+}
+
+.booking-btn{
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    padding: 15px 25px;
+}
+
+.booking-btn:hover{
+    background-color: #333;
+    color:#f1f1f1;
+    cursor: pointer;
+}
+
+/* ------------------------- */
+/* ----footer section style---- */
+footer{
+    background-color: #1b1b1b;
+    color: #d4d4d4;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    align-content: flex-start;
+    padding: 10px;
+   
+}
+
+.footer-column{
+    flex: 1 1 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.footer-icons{
+    margin-top: 15px;
+}
+
+.footer-column .fab{
+    padding: 7px;
+}
+
+.footer-column .fab:hover{
+    cursor: pointer;
+    color: #9a9a9a;
+}
+
+
+.logo-footer{
+    /* to center the img */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* not a good practise */
+    margin-top: -10px;
+}
+
+.footer-span{
+    color: #9a9a9a;
+    text-transform: uppercase;
+}
+
+.footer-span:hover{
+    cursor: pointer;
+    color: #d4d4d4;
+}
+.footer-cpyright{
+    color: #9a9a9a;
+}
+/* ------------------------- */
+/* ----utality classes---- */
+.margin-bottom-med{
+    margin-bottom: 20px;
+}
