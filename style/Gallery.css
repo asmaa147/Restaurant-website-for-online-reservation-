@@ -1,0 +1,63 @@
+*
+{
+    /*to get ride of default margin and padding */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.categories
+{
+    width: 100%;
+    position: relative;
+}
+.mealOptions
+{
+    border-bottom:1px  solid rgba(0, 0, 0, .2);
+    padding-bottom:20px ;
+    text-align: center;
+    width: max-content;
+    margin:50px  auto;
+    cursor: pointer;
+}
+
+.option 
+ {
+     margin: 0  25px ;
+     font-family: sans-serif;
+     opacity: 0.6;
+     padding:20px ;
+     
+ }
+ .active
+ {
+    border-bottom:3px  solid rgba(0, 0, 0, 1);
+   
+ }
+ .active2
+ {
+     border:none ;
+ }
+#menuOPtions 
+ {
+     margin: 50px auto;
+     text-align: center;
+     padding:20px;
+     
+ }
+ #ALL
+ {
+     opacity: 1;
+ }
+  #menuOPtions #SEAFOOD , #menuOPtions #CHICKEN
+ {
+     display: none;
+ }
+
+ #menuOPtions img
+ {
+     width:400px ;
+     height: 400px;
+ }
+ 
+

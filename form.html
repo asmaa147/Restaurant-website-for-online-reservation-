@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/Sections.css">
+
+        <link rel="stylesheet" href="style/formStyle.css">
+       
+    </head>
+    <body>
+        <!-- Nav -->
+
+    <div class="nav">
+
+        <a href="index.html">  <img class="logoImg" src="images/logo-footer.png"> </a> 
+         <div class="links">
+             <ul class="nav-links">
+                 <li class="home"> <a href="index.html"> Home </a> </li>
+                 <li class="countries"> <a href="#"> Countries </a> </li>
+                 <li class="about"> <a href="#"> About Us </a> </li>
+                 <li class="contact"> <a href="#"> Contact Us </a> </li>
+             </ul>
+         </div>
+         <span></span>
+     </div>
+ 
+     <div id="navDropList1">
+         <ul id="list1">
+             <li id="typeFood1"> <a href="Canadian.html"> Canadian Food </a> </li>
+             <li id="typeFood2"> <a href="Japanese.html"> Japanese Food </a> </li>
+             <li id="typeFood3"> <a href="Egyptian.html"> Egyptian Food </a> </li>
+             <li id="typeFood3"> <a href="British.html">  British Food </a> </li>
+         </ul> 
+     </div>
+
+
+
+        <div class="booking-section">
+            <form class="booking-form" >
+            <fieldset class="booking-fieldset">
+                <legend><span class="form-number">1</span> Reservation Info</legend>
+                <div class="booking-select margin-bottom-med">
+                        <select name="booking-people" class="booking-people" id="people" required>
+                            <option value="1">1 person</option>
+                            <option value="2">2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5 people</option>
+                            <option value="6">6 people</option>
+                            <option value="7">7 people</option>
+                            <option value="8">8 people</option>
+                            <option value="9">9 people</option>
+                            <option value="10">10 people</option>
+                        </select>    
+                </div>
+
+                <div class="booking-select">
+                    <select name="booking-time" class="booking-date" onchange="disableDate()"    required>
+                        <option value="duration" selected disabled >Date</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      
+                        
+                    </select>
+                    
+                </div>
+                <div class="booking-select">
+                    <select name="booking-time" class="booking-time" required>
+                        <option value="duration" selected disabled >Time</option>
+
+                        <option value="1" >1:00 pm</option>
+                        <option value="2">2:00 pm</option>
+                        <option value="3">3:00 pm</option>
+                        <option value="4">4:00 pm</option>
+                        <option value="5">5:00 pm</option>
+                        <option value="6">6:00 pm</option>
+                        <option value="7">7:00 pm</option>
+                        <option value="8">8:00 pm</option>
+                        <option value="9">9:00 pm</option>
+                        <option value="10">10:00 pm</option>
+                        
+                    </select>
+                </div>
+
+                <div class="booking-select">
+                    <select name="booking-duration" class="booking-duration" required>
+                        <option value="duration" selected disabled >duration</option>
+
+                        <option value="1" >1 hour</option>
+                        <option value="2">2 hour</option>
+                    </select>
+                </div>
+            </fieldset>
+
+
+            <fieldset class="booking-fieldset">
+                <legend><span class="form-number">2</span> Customer Info</legend>
+                <div class="booking-select">
+                    <label id = "FnameValidation"></label>
+
+                    <input type="text" placeholder="First Name" class="booking-name" 
+
+                   id = "fname"  onblur="validateName(this, 'FnameValidation')">
+                </div>
+                <div class="booking-select">
+                    <label id = "LastnameValidation"></label>
+
+                    <input type="text" placeholder="Last Name" class="booking-name" 
+                       id = "lname" required onblur="validateName(this , 'LastnameValidation')">
+
+                </div>
+
+                <div class="booking-select">
+                    <label id = "phoneValidation"></label>
+
+                    <input type="text" placeholder="your phone" class="booking-phone" 
+                    onblur="validatePhone(this ,'phoneValidation' )">
+
+                </div>
+            </fieldset>
+        
+
+            <button class="booking-btn" type="submit">Book a table</button>
+            
+
+        </form>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4 class="fotter-heading-4 margin-bottom-med">Twitter Feed</h4>
+                    <p class="margin-bottom-med">
+                        <span class="footer-span">@GeorgiaAnneUK</span> you can contact us here
+                        here <span class="footer-span"> https://t.co/slOtDps7jf.</span>
+                        You can see how we use it <span class="footer-span">https://t.co/aeBTHGZYrA</span>
+                    </p>
+    
+                    <p>
+                        <span class="footer-span">@ABronscheer</span> <span class="footer-span">@wpbakery</span> you can
+                        submit your suggestions here
+                        at <span class="footer-span">https://t.co/gjkxiQ5Z4k</span> in order t… <span
+                            class="footer-span">https://t.co/4cvW8xU1dG</span>
+                    </p>
+    
+                </div>
+                <div class="footer-column">
+                    <img src="images/logo-footer.png" alt="logo-footer" class="logo-footer margin-bottom-med">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. </p>
+                    <p>+387648592568</p>
+                    <p>info@elatedthemes.com</p>
+                    <p>Eighth Avenue 487, New York</p>
+    
+                    <div class="footer-icons">
+                        <i class="fab fa-vimeo-v"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="fotter-heading-4 margin-bottom-med">Instagram Feed</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="footer-cpyright-div">
+                <p class="footer-cpyright">&copy; copy rights reserved for us</p>
+            </div>
+        </footer>
+
+
+        <script src="scripts/jQuery-D.js"></script>
+        <script src="scripts/cookie.js"></script>
+
+        <script src="scripts/form.js"></script>
+
+    </body>
+</html>

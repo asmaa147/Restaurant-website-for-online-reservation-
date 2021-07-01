@@ -1,0 +1,143 @@
+/* ------------------------- */
+/* ----booking section style---- */
+
+.booking-section{
+    text-align: center;
+    padding: 50px 400px;
+    color: #555;
+}
+
+.booking-heading-4{
+    text-transform: uppercase;
+}
+
+.booking-fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: flex-start;
+
+    border: 2px solid #f1f1f1;
+    margin: auto;
+}
+
+.form-number{
+    background-color:#333 ;
+    color:#f1f1f1;
+    height: 30px;
+	width: 30px;
+    display: inline-block;
+    margin-right: 4px;
+	line-height: 30px;
+    text-align: center;
+    border-radius: 15px 15px 15px 0px;
+}
+
+.booking-people,
+.booking-time,
+.booking-date,
+.booking-name,
+.booking-phone,
+.booking-duration{
+    /* to remove the dropdown arrow */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid #ebebeb;
+    padding: 15px;
+    color: #9a9a9a;
+}
+
+.booking-select{
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.booking-form legend{
+    text-align: left;
+}
+
+option:disabled{
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+
+.booking-btn{
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    padding: 15px 25px;
+    margin-top: 20px;
+}
+
+.booking-btn:hover{
+    background-color: #333;
+    color:#f1f1f1;
+    cursor: pointer;
+}
+
+#customerDetails
+{
+    width: 400px;
+    height: 400px;
+    background-color:#f1f1f1;
+    color: #777;
+    text-transform:uppercase;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px #333;
+    margin: 100px auto;
+    padding: 50px;
+    font-family: sans-serif;
+    line-height:3 ;  
+    opacity: 0.9;  
+
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Button Styling*/
+.button
+{
+    
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color:#f1f1f1;
+    text-decoration: none;
+    position: relative;
+    color: rgb(51, 51, 51);
+    transition: color .2s;
+}
+.button::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    background-color:#333;
+    transition: width .3s ;   
+}
+.button:hover
+{
+    color:#f1f1f1;
+}
+.button:hover::before
+{
+    width: 100%;
+} 
+.btn-cnt
+{
+    position: relative;
+}
+.center{
+    margin: auto ;
+    width: max-content;
+}

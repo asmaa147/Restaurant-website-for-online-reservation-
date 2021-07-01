@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/Sections.css">
+        <link rel="stylesheet" href="style/formStyle.css">
+        <script>
+            function displayInfo()
+                {
+                            var fname = getCookie("fName");
+                            var lname = getCookie("lName");
+                            var phone = getCookie("phone");
+                            var DATEoR = getCookie("DATEoR").replace(/%2F/g , '/');
+    
+                            var hourp = getCookie("pickedHour");
+                            var numberOp = getCookie("peopleN");
+                            document.getElementById("customerDetails").innerHTML =  
+                            "welcome "+fname +"  "+lname +"<br>"
+                        +"you have rserved a table of " +numberOp + "  persons <br> date of reservation is :   " +DATEoR +" at  "+hourp +" AM";
+       
+    
+                }
+            </script>
+
+    </head>
+    <body onload="displayInfo()"> 
+          <!-- Nav -->
+
+          <div class="nav">
+
+            <a href="index.html">  <img class="logoImg" src="images/logo-footer.png"> </a> 
+             <div class="links">
+                 <ul class="nav-links">
+                     <li class="home"> <a href="index.html"> Home </a> </li>
+                     <li class="countries"> <a href="#"> Countries </a> </li>
+                     <li class="about"> <a href="#"> About Us </a> </li>
+                     <li class="contact"> <a href="#"> Contact Us </a> </li>
+                 </ul>
+             </div>
+             <span></span>
+         </div>
+     
+         <div id="navDropList1">
+             <ul id="list1">
+                 <li id="typeFood1"> <a href="Canadian.html"> Canadian Food </a> </li>
+                 <li id="typeFood2"> <a href="Japanese.html"> Japanese Food </a> </li>
+                 <li id="typeFood3"> <a href="Egyptian.html"> Egyptian Food </a> </li>
+                 <li id="typeFood3"> <a href="British.html">  British Food </a> </li>
+             </ul> 
+         </div>
+      
+         <!-- display message -->
+        <div id = "customerDetails">
+        
+        </div>
+        <div class="center">
+            <a href="index.html" class="button"> <span class ="btn-cnt"> Back to Home </span> </a>
+
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4 class="fotter-heading-4 margin-bottom-med">Twitter Feed</h4>
+                    <p class="margin-bottom-med">
+                        <span class="footer-span">@GeorgiaAnneUK</span> you can contact us here
+                        here <span class="footer-span"> https://t.co/slOtDps7jf.</span>
+                        You can see how we use it <span class="footer-span">https://t.co/aeBTHGZYrA</span>
+                    </p>
+    
+                    <p>
+                        <span class="footer-span">@ABronscheer</span> <span class="footer-span">@wpbakery</span> you can
+                        submit your suggestions here
+                        at <span class="footer-span">https://t.co/gjkxiQ5Z4k</span> in order t… <span
+                            class="footer-span">https://t.co/4cvW8xU1dG</span>
+                    </p>
+    
+                </div>
+                <div class="footer-column">
+                    <img src="images/logo-footer.png" alt="logo-footer" class="logo-footer margin-bottom-med">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. </p>
+                    <p>+387648592568</p>
+                    <p>info@elatedthemes.com</p>
+                    <p>Eighth Avenue 487, New York</p>
+    
+                    <div class="footer-icons">
+                        <i class="fab fa-vimeo-v"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="fotter-heading-4 margin-bottom-med">Instagram Feed</h4>
+                    <p></p>
+                </div>
+            </div>
+            <div class="footer-cpyright-div">
+                <p class="footer-cpyright">&copy; copy rights reserved for us</p>
+            </div>
+        </footer>
+        
+        <script src="scripts/jQuery-D.js"></script>
+        <script src="scripts/cookie.js"></script>
+
+            
+        </script>
+      
+
+    </body>
+</html>
